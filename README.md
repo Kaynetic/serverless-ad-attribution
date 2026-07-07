@@ -2,7 +2,7 @@
 
 The attribution layer of a production legal-intake platform: every paid click — Google, YouTube, Meta, TikTok — is traced from the ad through a three-domain landing topology, into the intake chatbot, and back out to the ad platforms as **server-side conversion events**. Plus a forensic methodology for the day the leads stop coming.
 
-> **About this repo.** Case study of a live client system; identifying details anonymized, code in [`excerpts/`](excerpts/) sanitized and representative. Production source is private.
+> **About this repo.** Case study of a live client system; identifying details anonymized, code in [`excerpts/`](excerpts/) sanitized and representative. Production source is private. All rights reserved — see the [copyright notice](#copyright--permitted-use) below.
 
 ---
 
@@ -57,3 +57,9 @@ Conclusion — with receipts: the code was exonerated; the campaign configuratio
 ---
 
 *Built by [Kamogelo Mahlasela](https://github.com/Kaynetic) and [Masego Letsoko](https://github.com/SegoML).*
+
+## Copyright & permitted use
+
+© 2026 Kamogelo Mahlasela and Masego Letsoko. **All rights reserved.**
+
+This repository is published for **viewing only**, so prospective employers, clients, and collaborators can evaluate our work. **No license is granted.** Beyond viewing on GitHub (and the limited on-platform rights GitHub's Terms of Service provide), no part of this repository — text, architecture diagrams, or code excerpts — may be copied, reproduced, modified, distributed, or used to create derivative works without our prior written permission.
