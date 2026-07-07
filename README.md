@@ -34,13 +34,13 @@ Two honest lessons from production:
 
 ## Marketing forensics: the day the leads stopped
 
-Mid-year, paid leads abruptly stopped. The chatbot had just shipped a major update — so the update was the obvious suspect. I ran the investigation as a structured audit (parallel evidence tracks, then adversarial review of the conclusion) rather than a hunt for a comforting answer:
+Mid-year, paid leads abruptly stopped. The chatbot had just shipped a major update — so the update was the obvious suspect. We ran the investigation as a structured audit (parallel evidence tracks, then adversarial review of the conclusion) rather than a hunt for a comforting answer:
 
 - Reconstructed the timeline from ingestion records: the drop aligned with the **quarterly ad-campaign rollover** on both Google and Meta — *days before* the widget update actually went live (which itself shipped three days later than planned; assumed dates were replaced with deployed-artifact evidence).
 - Verified the pipeline end-to-end for the window: CAPI 42/42 accepted, intake alert emails 100% delivered, every CRM case in the window accounted for.
 - Found the smoking gun in the client's own correspondence: the new quarter's ad had shipped with a **malformed website URL** (the bare UTM string, no destination).
 
-Conclusion — with receipts: the code was exonerated; the campaign configuration was the cause. The write-up separated "what I verified" from "what I infer," and each claim was re-tested by adversarial review passes before it was reported to the client.
+Conclusion — with receipts: the code was exonerated; the campaign configuration was the cause. The write-up separated "what we verified" from "what we infer," and each claim was re-tested by adversarial review passes before it was reported to the client.
 
 ## What this demonstrates
 
@@ -53,3 +53,7 @@ Conclusion — with receipts: the code was exonerated; the campaign configuratio
 | File | Pattern it demonstrates |
 |---|---|
 | [`excerpts/capi_event.py`](excerpts/capi_event.py) | Building a Meta CAPI event: normalization, hashing, origin-routed pixel, dedup `event_id` |
+
+---
+
+*Built by [Kamogelo Mahlasela](https://github.com/Kaynetic) and [Masego Letsoko](https://github.com/SegoML).*
